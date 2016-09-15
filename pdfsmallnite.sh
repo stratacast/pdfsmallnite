@@ -28,7 +28,7 @@ cd $pdf_location
 
 pdfunite $filenames $finalpdf.pdf
 pdf2ps $finalpdf.pdf $finalpdf.ps
-ps2pdf $finalpdf.ps newpdf.pdf
+ps2pdf $finalpdf.ps final_converted.pdf
 rm $finalpdf.ps $finalpdf.pdf
-mv newpdf.pdf $current_dir/$finalpdf.pdf
+mv final_converted.pdf $current_dir/$finalpdf.pdf
 
